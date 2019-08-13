@@ -12,8 +12,7 @@ workwechat_callback 是为了简化开发者对企业微信API回调接口的使
     php: https://github.com/sbzhu/weworkapi_php
     golang : https://github.com/doubliekill/EnterpriseWechatSDK 1006401052yh@gmail.com
 
-Requirement
-搭建环境
+#搭建环境
 
 需要搭建python3.5+django2.1框架开发环境，参阅python官方文档以及django2.1的配置。本文基于linux环境开发。
 接入过程
@@ -29,22 +28,21 @@ Requirement
     EncodingAESKey 用于消息体的加密，是AES密钥的Base64编码
 
 随后记录这些参数，将其填写到 callback/views.py  的对应字段。
-初始化项目
+#初始化项目
 
-在命令行窗口执行以下命令：
 
-nohup python3
 
 项目解密逻辑主要逻辑封装在  由企业微信体用的下载的python版本WXBizMsgCrypt.py进行兼容目前python3.5可以正常运行
 对应的处理逻辑均在callback/views.py在我们可以根据实际场景修改其中逻辑。
 
 项目配置完成后，我们可以使用以下命令进行后台运行server：
 
-npm start
+nohup python3
+
 
 在设置API接收页面点击保存，回调完成，此时在应用中发送一条文本，视频，图片消息，应用会被动回复已发送的内容。
 
 其他代码逻辑，根据业务需求，修改对应的函数或模块。
-项目目录结构
+#项目目录结构
 
 
