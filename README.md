@@ -18,7 +18,7 @@ Requirement
 
 # 搭建环境
 
-需要搭建python3.5.2+django2.2开发环境，参阅[python官方文档]以及[django2.1的配置]。本文基于linux环境开发。
+需要搭建python3.5.2+django2.2开发环境，参阅[python官方文档]以及[django2.2的配置]。本文基于linux环境开发。
 
 [python官方文档]: https://www.python.org/
 [django2.2的配置]: https://www.djangoproject.com/
